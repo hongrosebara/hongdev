@@ -11,17 +11,17 @@ const Contact = () => {
     <form onSubmit={handleSubmit}>
       <div className="input-group">
         <div className="input-group__item input-group__name">
-          <input type="text" name="name" id="full-name" placeholder="NAME" />
+          <input type="text" name="name" id="full-name" placeholder="NAME" required />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
         </div>
 
         <div className="input-group__item input-group__email">
-          <input id="email" type="email" name="email" placeholder="EMAIL" />
+          <input id="email" type="email" name="email" placeholder="EMAIL" required />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
         <div className="input-group__item input-group__message">
-          <textarea id="message" name="message" placeholder="MESSAGE"/>
+          <textarea id="message" name="message" placeholder="MESSAGE" required/>
           <ValidationError
             prefix="Message"
             field="message"
