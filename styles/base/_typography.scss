@@ -18,24 +18,41 @@
     font-size: 2.4rem;
     line-height: 3.2rem;
   }
+
+  .underlined-item {
+    @apply z-20 text-justify pb-3;
+    border-bottom: 3px solid var(--primary-2);
+  }
+}
+
+input, textarea, button {
+  -webkit-appearance: none;
+  outline: none;
+  background: transparent;
 }
 
 /* Layout */
 .section-layout {
   @apply text-white relative;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
   height: 100%; 
-  padding: 4.3rem 16.5rem;
+  padding: 0 16.5rem;
   max-width: 1440px;
 }
 
 /* Navigation */
+
 .navigation {
   @apply flex items-center justify-between z-20;
-  position: inherit;
+  &--top {
+    
+    top: 43px;
+    position: inherit;
+  }
+
+  &--bottom {
+    top: 3648px;
+    position: inherit;
+  }
 }
 
 .navigation-brand {
@@ -79,7 +96,7 @@
     height: 38px;
     left: 165px;
     top: 567px;
-    border-bottom: 4px solid var(--primary-2);
+    border-bottom: 3px solid var(--primary-2);
   }
 }
 
@@ -139,8 +156,7 @@
 }
 
 .project-contact {
-  @apply z-20 text-justify pb-3;
-  border-bottom: 4px solid var(--primary-2);
+  @apply underlined-item;
 }
 
 .project-main {
@@ -163,7 +179,7 @@
   }
 
   h2 {
-    @apply heading-large;
+    @apply heading-medium;
   }
 
   & span {
@@ -201,17 +217,17 @@
 /* FOOTER */
 .footer {
   @apply absolute z-20 text-white bg-secondary;
-  width: 1440px;
-  height: 675px;
   left: 0px;
+  width: 100%;
+  padding: 8rem 16.5rem;
   top: 3197px;
 }
 
 .contact-card {
-  @apply grid grid-cols-2;
-  padding: 8rem 16.5rem 26.4rem 16.5rem;
-  height: 327px;
-
+  @apply grid grid-cols-2 justify-self-stretch;
+  padding-bottom: 8rem;
+  border-bottom: 1px solid var(--secondary-2);
+  
   &__left {
     width: 445px;
 
@@ -222,6 +238,27 @@
   }
 
   &__right {
-    @apply uppercase;
+    @apply uppercase justify-self-end;
+    width: 445px !important;
+  }
+}
+
+.input-group {
+  @apply flex flex-col align-top;
+  gap: 3.2rem;
+
+  &__item {
+    border-bottom: 1px solid var(--secondary-2);
+    width: 100%;
+    height: 43px;
+    padding-bottom: 5px;
+  }
+
+  &__submit {
+    text-align: right;
+    
+    & button {
+      border-bottom: 3px solid var(--primary-2);
+    }
   }
 }

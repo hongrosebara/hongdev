@@ -1,8 +1,8 @@
 
 
-const Navigation = () => {
+const Navigation = ({ position }) => {
   return (
-    <div className="navigation">
+    <div className={`navigation navigation--${position}`}>
       <div className="navigation-brand">
          <span className="navigation-logo">Hong Le</span>
       </div>
