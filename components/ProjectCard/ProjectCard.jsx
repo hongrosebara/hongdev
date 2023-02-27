@@ -1,4 +1,4 @@
-import { useState } from "react"
+import Image from "next/image"
 
 const ProjectCard = () => {
   const projects = [
@@ -74,16 +74,16 @@ const ProjectCard = () => {
         {projects.map((project) => (
           <figure key={project.id} className="project-card">
             <div className="project-card__image">
-              <img src={project.img} alt={project.name} />
+              <Image src={project.img} alt={project.name} width={540} height={400} />
               <div className="project-card__overlay">
                 <div className="project-card__overlay-link">
-                  <a href={project.link} target="_blank">
+                  <a href={project.link} target="_blank" rel="noreferrer">
                     View Project
                   </a>
                 </div>
 
                 <div className="project-card__overlay-link">
-                  <a href={project.code} target="_blank">
+                  <a href={project.code} target="_blank" rel="noreferrer">
                     View Code
                   </a>
                 </div>
