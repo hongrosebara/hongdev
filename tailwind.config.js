@@ -36,6 +36,9 @@ module.exports = {
         base: 'var(--text-base)',
         primary: 'var(--text-primary)',
         secondary: 'var(--text-secondary)',
+      },
+      fontSize: {
+        base: '1.8rem',
       }
     },
   },

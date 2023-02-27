@@ -1,10 +1,13 @@
-import s from "./Layout.module.css"
+import { Navigation, Header, Footer } from "@/components/common"
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <main>
-      {children}
-    </main>
+    <section className="section-layout">
+      <Navigation />
+      <Header />
+      <main className="absolute">{children}</main>
+      <Footer />
+    </section>
   )
 }
 export default Layout

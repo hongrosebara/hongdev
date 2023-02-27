@@ -1,0 +1,227 @@
+@layer components {
+  .heading-xl {
+    font-weight: bold;
+    font-size: 8.8rem;
+    line-height: normal;
+    letter-spacing: -2.5px;
+  }
+
+  .heading-large {
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -1.5px;
+  }
+
+  .heading-medium {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+}
+
+/* Layout */
+.section-layout {
+  @apply text-white relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%; 
+  padding: 4.3rem 16.5rem;
+  max-width: 1440px;
+}
+
+/* Navigation */
+.navigation {
+  @apply flex items-center justify-between z-20;
+  position: inherit;
+}
+
+.navigation-brand {
+  @apply justify-start h-7;
+}
+
+.navigation-logo {
+  @apply text-3xl;
+}
+
+.main-nav {
+  @apply mr-7 h-6;
+  &__items-list {
+    @apply flex space-x-2 items-center justify-center;
+  }
+}
+
+/* Header */
+.header {
+  
+  &__text-box {
+    @apply font-bold absolute z-20;
+    width: 706px;
+    height: 303px;
+    left: 165px;
+    top: 198px;
+  }
+
+  &__image-box {
+    @apply absolute z-10;
+    width: 445px;
+    height: 720px;
+    left: 830px;
+    top: 0px;
+  }
+
+  &__cta-button {
+    @apply z-20 text-justify pb-3;
+    position: absolute;
+    width: 120px;
+    height: 38px;
+    left: 165px;
+    top: 567px;
+    border-bottom: 4px solid var(--primary-2);
+  }
+}
+
+.heading-primary {
+  font-size: 8.8rem;
+
+  &--main {
+    @apply block;
+  }
+  &--sub {
+    text-decoration: underline;
+    color: var(--primary-2);
+  }
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+}
+
+/* Main Content */
+
+
+/* Skill Card */
+.section-skills {
+  @apply grid grid-cols-3;
+  position: absolute;
+  width: 1110px;
+  height: 327px;
+  top: 824px;
+}
+
+.skill__item {
+  & h2 {
+    @apply heading-large;
+  }
+
+  &--experience {
+    font-size: 1.8rem;
+  }
+}
+
+/* Projects */
+.section-projects {
+  position: absolute;
+  width: 1110px;
+  height: 1767px;
+  top: 1291px;
+}
+
+.project-header {
+  @apply flex justify-between items-center;
+  margin-bottom: 8rem;
+}
+
+.project-heading {
+  @apply heading-xl;
+}
+
+.project-contact {
+  @apply z-20 text-justify pb-3;
+  border-bottom: 4px solid var(--primary-2);
+}
+
+.project-main {
+  @apply grid grid-cols-2;
+  gap: 3rem;
+}
+
+.project-card {
+
+  &__image {
+    @apply cursor-pointer relative w-full;
+  }
+
+  & img {
+    @apply pb-2;
+
+    &:hover {
+      @apply opacity-50 transition ease-in;
+    }
+  }
+
+  h2 {
+    @apply heading-large;
+  }
+
+  & span {
+    @apply mr-2;
+    font-size: 1.8rem;
+  }
+
+  &__overlay {
+    @apply absolute left-0 top-0 w-full h-full opacity-0;
+    background: rgb(0, 0, 0, 0.5);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      @apply opacity-100;
+    }
+
+    &-link {
+      @apply uppercase pb-3 mb-6;
+      border-bottom: 3px solid var(--primary-2);
+    }
+  }
+}
+
+.hover-trigger .hover-target {
+  display: none;
+}
+
+.hover-trigger:hover .hover-target {
+  @apply block;
+}
+
+/* FOOTER */
+.footer {
+  @apply absolute z-20 text-white bg-secondary;
+  width: 1440px;
+  height: 675px;
+  left: 0px;
+  top: 3197px;
+}
+
+.contact-card {
+  @apply grid grid-cols-2;
+  padding: 8rem 16.5rem 26.4rem 16.5rem;
+  height: 327px;
+
+  &__left {
+    width: 445px;
+
+    & h2 {
+      @apply heading-xl;
+      margin-bottom: 3.6rem;
+    }
+  }
+
+  &__right {
+    @apply uppercase;
+  }
+}

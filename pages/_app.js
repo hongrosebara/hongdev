@@ -1,6 +1,6 @@
-import "@/styles/main.css";
+import "@/styles/main.scss"
 
-const Noop = ({children}) => <>{children}</>
+const Noop = ({ children }) => <>{children}</>
 
 function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout ?? Noop
@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Component {...pageProps} />
     </Layout>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp
