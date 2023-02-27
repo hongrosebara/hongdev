@@ -16,7 +16,7 @@ const Header = () => {
       </div>
 
       <div className="header__image-box">
-        <Image src="/images/image-profile-desktop.webp" alt="Hong Le Dev" width={444.88} height={618}/>
+        <Image src="/images/hong le.jpeg" alt="Hong Le Dev" width={444.88} height={618}/>
       </div>
 
       <div className="header__cta-button">

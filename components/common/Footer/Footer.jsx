@@ -15,6 +15,8 @@ const Footer = () => {
           <Contact />
         </div>
       </div>
+
+      <Navigation position="bottom"/>
     </footer>
   )
 }

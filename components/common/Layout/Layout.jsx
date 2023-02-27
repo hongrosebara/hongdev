@@ -5,9 +5,8 @@ const Layout = ({ children }) => {
     <section className="section-layout">
       <Navigation position="top" />
       <Header />
-      <main className="absolute">{children}</main>
+      <main>{children}</main>
       <Footer />
-      <Navigation position="bottom"/>
     </section>
   )
 }
