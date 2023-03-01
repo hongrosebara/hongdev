@@ -74,18 +74,24 @@ const ProjectCard = () => {
         {projects.map((project) => (
           <figure key={project.id} className="project-card">
             <div className="project-card__image">
-              <Image src={project.img} alt={project.name} width={540} height={400} />
+              <Image
+                src={project.img}
+                alt={project.name}
+                width={540}
+                height={400}
+              />
               <div className="project-card__overlay">
-                <div className="project-card__overlay-link">
-                  <a href={project.link} target="_blank" rel="noreferrer">
-                    View Project
-                  </a>
-                </div>
-
-                <div className="project-card__overlay-link">
-                  <a href={project.code} target="_blank" rel="noreferrer">
-                    View Code
-                  </a>
+                <div className="project-card__overlay-links">
+                  <div>
+                    <a href={project.link} target="_blank" rel="noreferrer">
+                      View Project
+                    </a>
+                  </div>
+                  <div>
+                    <a href={project.code} target="_blank" rel="noreferrer">
+                      View Code
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -38,7 +38,7 @@ module.exports = {
         secondary: 'var(--text-secondary)',
       },
       fontSize: {
-        base: '1.8rem',
+        base: '18px',
       }
     },
   },
