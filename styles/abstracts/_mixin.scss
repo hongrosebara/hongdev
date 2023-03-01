@@ -34,7 +34,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-      @media only screen and (max-width: 375px) { @content };    //375px
+      @media only screen and (max-width: 480px) { @content };    //375px
   }
   @if $breakpoint == tablet {
       @media only screen and (max-width: 768px) { @content };     //900px

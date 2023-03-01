@@ -21,7 +21,7 @@ input, textarea, button {
 /* Layout */
 .section-layout {
   margin: 0 auto!important;
-
+  
   @include respond(desktop) {
     max-width: 1110px;
   }
@@ -30,8 +30,8 @@ input, textarea, button {
     max-width: 708px;
   }
 
-  @include respond(tablet) {
-    max-width: 375px;
+  @include respond(phone) {
+    max-width: 480px;
   }
 
 }
@@ -226,9 +226,11 @@ input, textarea, button {
   }
 
   @include respond(phone) {
-    @apply flex flex-col;
+    @apply grid grid-cols-1 text-center;
     padding-top: 40px;
     margin-top: 40px;
+    justify-items: center;
+    align-items: center;
   }
 }
 
@@ -352,7 +354,7 @@ input, textarea, button {
   }
 
   @include respond(phone) {
-    width: 375px;
+    width: 480px;
     height: 834px;
     left: 0px;
     top: 4179px;
