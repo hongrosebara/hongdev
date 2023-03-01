@@ -31,7 +31,7 @@ input, textarea, button {
   }
 
   @include respond(phone) {
-    max-width: 480px;
+    min-width: 480px;
   }
 
 }
@@ -59,7 +59,7 @@ input, textarea, button {
   }
 
   @include respond(phone) {
-    @apply flex flex-col;
+    @apply flex flex-col gap-3;
   }
 }
 
@@ -84,7 +84,10 @@ input, textarea, button {
 
   &-wrapper {
     margin: 0 auto;
-    max-width: 1110px;
+
+    @include respond(desktop) {
+      max-width: 1110px;
+    }
 
     @include respond(tablet) {
       max-width: 708px;
@@ -110,9 +113,9 @@ input, textarea, button {
     }
   
     @include respond(phone) {
+      text-align: center;
       width: 343px;
-      height: 244px;
-      margin-top: 320px;
+      margin: 0 auto;
     }
 
     & .heading-primary {
@@ -153,6 +156,7 @@ input, textarea, button {
         width: 343px;
         font-size: 16px;
         line-height: 26px;
+        margin-bottom: 24px;
       }
     }
     
@@ -177,10 +181,11 @@ input, textarea, button {
     }
   
     @include respond(phone) {
+      @apply flex items-center;
+      margin: 0 auto;
+      position: inherit;
       width: 174px;
       height: 383px;
-      left: 101px;
-      top: -20px;
     }
   }
 
@@ -200,7 +205,8 @@ input, textarea, button {
     }
   
     @include respond(phone) {
-      margin-top: 24px;
+      margin: 0 auto;
+      text-align: center
     }
   }
 }
@@ -227,10 +233,11 @@ input, textarea, button {
 
   @include respond(phone) {
     @apply grid grid-cols-1 text-center;
-    padding-top: 40px;
+    padding: 40px 0;
     margin-top: 40px;
     justify-items: center;
     align-items: center;
+    border-bottom: 1px solid var(--secondary-2);
   }
 }
 
@@ -253,7 +260,20 @@ input, textarea, button {
 /* Projects */
 .section-projects {
   @apply w-full;
-  margin-top: 140px;
+
+  @include respond(desktop) {
+    margin-top: 140px;
+  }
+
+  @include respond(tablet) {
+    margin-top: 100px;
+  }
+
+  @include respond(phone) {
+    padding-top: 60px;
+    width: 343px;
+    margin: 0 auto;
+  }
 }
 
 .project-header {
@@ -357,7 +377,7 @@ input, textarea, button {
     width: 480px;
     height: 834px;
     left: 0px;
-    top: 4179px;
+    top: 3650px;
   }
 
   &__wrapper {
@@ -387,15 +407,26 @@ input, textarea, button {
   }
 
   @include respond(tablet) {
-    @apply grid grid-cols-1;
+    @apply flex flex-col justify-center items-center;
   }
 
   @include respond(phone) {
-    @apply grid grid-cols-1;
+    @apply flex flex-col justify-center items-center;
   }
   
   &__left {
-    width: 445px;
+
+    @include respond(desktop) {
+      width: 445px !important;
+    }
+  
+    @include respond(tablet) {
+      width: 445px !important;
+    }
+  
+    @include respond(phone) {
+      width: 343px !important;
+    }
 
     & h2 {
       @apply heading-xl;
@@ -413,8 +444,23 @@ input, textarea, button {
   }
 
   &__right {
-    @apply uppercase justify-self-end;
-    width: 445px !important;
+    @apply uppercase;
+
+    @include respond(desktop) {
+      @apply justify-self-end;
+      width: 445px !important;
+    }
+  
+    @include respond(tablet) {
+      @apply justify-self-center;
+      width: 445px !important;
+      margin-top: 48px;
+    }
+  
+    @include respond(phone) {
+      width: 343px !important;
+      margin-top: 48px;
+    }
   }
 }
 
