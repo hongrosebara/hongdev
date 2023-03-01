@@ -233,6 +233,7 @@ input, textarea, button {
 
   @include respond(phone) {
     @apply grid grid-cols-1 text-center;
+    height: 605px;
     padding: 40px 0;
     margin-top: 40px;
     justify-items: center;
@@ -377,7 +378,7 @@ input, textarea, button {
     width: 480px;
     height: 834px;
     left: 0px;
-    top: 3650px;
+    top: 3750px;
   }
 
   &__wrapper {
