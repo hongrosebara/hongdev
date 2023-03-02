@@ -37,6 +37,22 @@ input, textarea, button {
     min-width: 480px;
   }
 
+  & main {
+    margin: 0 auto;
+
+    @include respond(desktop) {
+      min-width: 1110px;
+    }
+  
+    @include respond(tablet) {
+      max-width: 708px;
+    }
+  
+    @include respond(phone) {
+      min-width: 480px;
+    }
+  }
+
 }
 
 /* Navigation */
@@ -45,11 +61,24 @@ input, textarea, button {
   
   &--top {
     margin-top: 43px;
+
+    @include respond(desktop) {
+      min-width: 1110px;
+    }
+  
+    @include respond(tablet) {
+      max-width: 708px;
+    }
+  
+    @include respond(phone) {
+      min-width: 480px;
+    }
   }
 
   &--bottom {
     margin-top: 47px;
   }
+  
 
   @include respond(tablet) {
     &--top {
@@ -75,7 +104,19 @@ input, textarea, button {
 }
 
 .main-nav {
-  @apply mr-7 h-6 z-30;
+
+  @include respond(desktop) {
+    @apply mr-7 h-6 z-30;
+  }
+
+  @include respond(tablet) {
+    @apply mr-7 h-6 z-30;
+  }
+
+  @include respond(phone) {
+    @apply h-6 z-30;
+  }
+
   &__items-list {
     @apply flex space-x-7 items-center justify-center;
   }
