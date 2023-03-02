@@ -100,6 +100,18 @@ const ProjectCard = () => {
             <span>{project.label1}</span>
             <span>{project.label2}</span>
             <span>{project.label3}</span>
+            <div className="project-card__links">
+              <div className="contact-me">
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  View Project
+                </a>
+              </div>
+              <div className="contact-me">
+                <a href={project.code} target="_blank" rel="noreferrer">
+                  View Code
+                </a>
+              </div>
+            </div>
           </figure>
         ))}
       </div>
