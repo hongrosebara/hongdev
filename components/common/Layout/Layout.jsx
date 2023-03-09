@@ -3,9 +3,11 @@ import { Header, Footer } from "@/components/common"
 const Layout = ({ children }) => {
   return (
     <section className="section-layout">
-      <Header />
-      <main>{children}</main>
-      <Footer />
+      <div className="layout-container">
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </div>
     </section>
   )
 }

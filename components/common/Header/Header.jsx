@@ -4,7 +4,7 @@ import { Navigation } from "@/components/common"
 const Header = () => {
   return (
     <header className="header">
-      <div className="header__wrapper">
+      <div className="header-container">
         <Navigation position="top" />
         <div className="header-svg"></div>
         <div className="header__image-box">
@@ -24,7 +24,7 @@ const Header = () => {
             <span>.</span>
           </h1>
           <p className="heading-secondary">
-            Based in Lisbon, I&apos;m a front-end developer passionate about
+            Based in London, I&apos;m a front-end developer passionate about
             creating beautiful and practical web apps that users love.
           </p>
         </div>

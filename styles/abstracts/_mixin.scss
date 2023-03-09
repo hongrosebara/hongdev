@@ -33,17 +33,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
-  @if $breakpoint == phone {
-      @media only screen and (max-width: 480px) { @content };    //375px
-  }
   @if $breakpoint == tablet {
-      @media only screen and (max-width: 768px) { @content };     //900px
+      @media only screen and (min-width: 768px) { @content };
   }
   @if $breakpoint == desktop {
-      @media only screen and (max-width: 1440px) { @content };    //1200px
-  }
-  @if $breakpoint == big-desktop {
-      @media only screen and (min-width: 112.5em) { @content };    //1800
+      @media only screen and (min-width: 1440px) { @content };
   }
 }
 

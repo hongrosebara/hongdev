@@ -11,34 +11,31 @@
   .heading-xl {
     font-weight: bold;
     line-height: normal;
+    font-size: 40px; 
+    letter-spacing: -1.14px;
+
+    @include respond(tablet) {
+      font-size: 72px;
+      letter-spacing: -2.05px;
+    }
 
     @include respond(desktop) {
       font-size: 88px;
       letter-spacing: -2.5px;
     }
-  
-    @include respond(tablet) {
-      font-size: 72px;
-      letter-spacing: -2.05px;
-    }
-  
-    @include respond(phone) {
-      font-size: 40px; 
-      letter-spacing: -1.14px;
-    }
   }
 
   .heading-large {
     font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -1.5px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
 
     @include respond(phone) {
       font-weight: bold;
-      font-size: 32px;
-      line-height: 40px;
-      letter-spacing: -1px;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -1.5px;
     }
   }
 
