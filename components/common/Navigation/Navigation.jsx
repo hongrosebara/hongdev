@@ -1,10 +1,13 @@
+import Link from "next/link"
 import Image from "next/image"
 
 const Navigation = ({ position }) => {
   return (
     <div className={`navigation navigation--${position}`}>
       <div className="navigation-brand">
-         <span className="navigation-logo">Hong Le</span>
+        <Link href="/">
+          <span className="navigation-logo">adamkeyes</span>
+         </Link>
       </div>
       <nav className="main-nav">
         <ul className="main-nav__items-list">

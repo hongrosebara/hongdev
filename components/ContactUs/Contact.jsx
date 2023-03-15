@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
 
         <div className="input-group__item input-group__message">
-          <textarea id="message" name="message" placeholder="MESSAGE" required/>
+          <textarea id="message" name="message" placeholder="MESSAGE" required />
           <ValidationError
             prefix="Message"
             field="message"

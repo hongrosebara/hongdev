@@ -4,7 +4,6 @@ import Contact from "@/components/ContactUs"
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
         <div className="contact-card">
           <div className="contact-card__left">
             <h2>Contact</h2>
@@ -21,7 +20,6 @@ const Footer = () => {
         </div>
 
         <Navigation position="bottom" />
-      </div>
     </footer>
   )
 }
