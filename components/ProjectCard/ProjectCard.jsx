@@ -4,64 +4,45 @@ const ProjectCard = () => {
   const projects = [
     {
       id: 1,
-      name: "DESIGN PORTFOLIO",
-      img: "/images/thumbnail-project-1-large.webp",
-      label1: "HTML",
-      label2: "CSS",
-      label3: null,
-      link: "https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo",
-      code: "https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo",
+      name: "Canva-like Card Designer App",
+      img: "/images/card designer app.svg",
+      label1: "Django",
+      label2: "Python",
+      label3: "Fabric.js",
+      label4: "Async",
+      link: "https://thijourney.com/art-prints/",
+      code: "https://github.com/hongrosebara/thijourney.git",
     },
     {
       id: 2,
-      name: "E-LEARNING LANDING PAGE",
-      img: "/images/thumbnail-project-2-large.webp",
-      label1: "HTML",
-      label2: "CSS",
-      label3: null,
-      link: "https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q",
-      code: "https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q",
+      name: "Nextjs Shopify Ecommerce",
+      img: "/images/nextjs shopify ecommerce.jpg",
+      label1: "Next.js",
+      label2: "Shopify Storefront API",
+      label3: "Tailwind CSS",
+      link: "https://next-giftbeta-shopify.vercel.app/",
+      code: "https://github.com/hongrosebara/next-giftbeta-shopify",
     },
     {
       id: 3,
-      name: "TODO WEB APP",
-      img: "/images/thumbnail-project-3-large.webp",
-      label1: "HTML",
-      label2: "CSS",
-      label3: "JAVASCRIPT",
-      link: "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW",
-      code: "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW",
+      name: "Gift App With Countdown Tool",
+      img: "/images/giftbeta with countdown-01.svg",
+      label1: "Vue.js",
+      label2: "Gridsome",
+      label3: "Sass",
+      link: "https://www.giftbeta.com/",
+      code: "https://github.com/hongrosebara/giftbeta",
     },
     {
       id: 4,
-      name: "ENTERTAINMENT WEB APP",
-      img: "/images/thumbnail-project-4-large.webp",
-      label1: "HTML",
+      name: "Virtual Coffee App",
+      img: "/images/wedreamofcoffee-01.svg",
+      label1: "Nextjs",
       label2: "CSS",
-      label3: "JAVASCRIPT",
-      link: "https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X",
-      code: "https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X",
-    },
-    {
-      id: 5,
-      name: "MEMORY GAME",
-      img: "/images/thumbnail-project-5-large.webp",
-      label1: "HTML",
-      label2: "CSS",
-      label3: "JAVASCRIPT",
-      link: "https://www.frontendmentor.io/challenges/memory-game-vse4WFPvM",
-      code: "https://www.frontendmentor.io/challenges/memory-game-vse4WFPvM",
-    },
-    {
-      id: 6,
-      name: "ART GALLERY SHOWCASE",
-      img: "/images/thumbnail-project-6-large.webp",
-      label1: "HTML",
-      label2: "CSS",
-      label3: "JAVASCRIPT",
-      link: "https://www.frontendmentor.io/challenges/galleria-slideshow-site-tEA4pwsa6",
-      code: "https://www.frontendmentor.io/challenges/galleria-slideshow-site-tEA4pwsa6",
-    },
+      label3: "HTML",
+      link: "https://www.wedreamofcoffee.com/",
+      code: "https://github.com/hongrosebara/virtualcafe",
+    }
   ]
 
   return (
@@ -100,6 +81,7 @@ const ProjectCard = () => {
             <span>{project.label1}</span>
             <span>{project.label2}</span>
             <span>{project.label3}</span>
+            <span>{project.label4}</span>
             <div className="project-card__links">
               <div className="contact-me">
                 <a href={project.link} target="_blank" rel="noreferrer">

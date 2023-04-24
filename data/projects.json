@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Card Designer App",
+      "img": "/images/card designer app.svg",
+      "label1": "HTML",
+      "label2": "CSS",
+      "label3": null,
+      "link": "https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo",
+      "code": "https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo"
+    },
+    {
+      "id": 2,
+      "name": "E-LEARNING LANDING PAGE",
+      "img": "/images/thumbnail-project-2-large.webp",
+      "label1": "HTML",
+      "label2": "CSS",
+      "label3": null,
+      "link": "https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q",
+      "code": "https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q"
+    },
+    {
+      "id": 3,
+      "name": "TODO WEB APP",
+      "img": "/images/thumbnail-project-3-large.webp",
+      "label1": "HTML",
+      "label2": "CSS",
+      "label3": "JAVASCRIPT",
+      "link": "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW",
+      "code": "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW"
+    },
+    {
+      "id": 4,
+      "name": "ENTERTAINMENT WEB APP",
+      "img": "/images/thumbnail-project-4-large.webp",
+      "label1": "HTML",
+      "label2": "CSS",
+      "label3": "JAVASCRIPT",
+      "link": "https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X",
+      "code": "https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X"
+    },
+    {
+      "id": 5,
+      "name": "MEMORY GAME",
+      "img": "/images/thumbnail-project-5-large.webp",
+      "label1": "HTML",
+      "label2": "CSS",
+      "label3": "JAVASCRIPT",
+      "link": "https://www.frontendmentor.io/challenges/memory-game-vse4WFPvM",
+      "code": "https://www.frontendmentor.io/challenges/memory-game-vse4WFPvM"
+    },
+    {
+      "id": 6,
+      "name": "ART GALLERY SHOWCASE",
+      "img": "/images/thumbnail-project-6-large.webp",
+      "label1": "HTML",
+      "label2": "CSS",
+      "label3": "JAVASCRIPT",
+      "link": "https://www.frontendmentor.io/challenges/galleria-slideshow-site-tEA4pwsa6",
+      "code": "https://www.frontendmentor.io/challenges/galleria-slideshow-site-tEA4pwsa6"
+    }
+  ]
+}

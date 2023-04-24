@@ -290,7 +290,7 @@ input, textarea, button {
   }
 
   & img {
-    @apply pb-2;
+    @apply pb-2 rounded-sm;
 
     &:hover {
       @apply opacity-50 transition ease-in;
