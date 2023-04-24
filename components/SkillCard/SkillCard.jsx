@@ -22,8 +22,8 @@ const SkillCard = () => {
         <span className="skill__item--experience">1 Year Experience</span>
       </div>
       <div className="skill__item">
-        <h2>Sass</h2>
-        <span className="skill__item--experience">2 Years Experience</span>
+        <h2>SEO</h2>
+        <span className="skill__item--experience">3 Years Experience</span>
       </div>
       
     </section>

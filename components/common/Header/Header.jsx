@@ -26,7 +26,7 @@ const Header = () => {
             <span>.</span>
           </h1>
           <p className="heading-secondary">
-              Based in Europe, I&apos;m a front-end developer passionate about building accessible web apps that users love.
+              Based in Europe, I&apos;m a front-end developer passionate about creating beautiful, responsive and practical web applications that users love.
           </p>
         </div>
 
