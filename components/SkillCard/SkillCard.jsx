@@ -7,7 +7,7 @@ const SkillCard = () => {
       </div>
       <div className="skill__item">
         <h2>Affiliate SEO</h2>
-        <span className="skill__item--experience">2 Year Experience</span>
+        <span className="skill__item--experience">2 Years Experience</span>
       </div>
       <div className="skill__item">
         <h2>Programmatic SEO</h2>
